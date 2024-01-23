@@ -3,6 +3,21 @@
 
 <div>
     <label for="numberInput">Enter the Year:</label>
-    <input type="number" id="numberInput" [(ngModel)]="enterYear"/>
+    <input type="number" id="numberInput" [(ngModel)]="movieYear"/>
     <button (click)="getMovies()">Get Movies</button>
 </div>
+
+
+    
+    <input type="text" ngModel name="title" placeholder="Enter title">
+    <br><br>
+    
+    <input type="text" ngModel name="body" placeholder="Enter body">
+    <br><br>
+    
+    <button>Add new</button>
+
+
+<li *ngFor="let user of users">
+    {{user.title}}
+</li>
